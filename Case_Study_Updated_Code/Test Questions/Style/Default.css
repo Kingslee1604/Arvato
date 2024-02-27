@@ -1,0 +1,582 @@
+﻿html, body, form, .header, .subNav {
+    width: 100%;
+    text-rendering: auto;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, img, dt, dd, fieldset, form, label, legend, table, thead, tr, th, td, video {
+    margin: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    font-size: 100%;
+	font-family: 'BlissRegular';
+}
+
+
+a img, iframe {
+    border: none;
+}
+
+a, a:link, a:visited, .tblStandard a:link, .tblStandard a:visited {
+    color: #0081bd;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+    a:hover {
+        outline: none;
+        color: #0051AA;
+        text-decoration: none;
+    }
+
+input[type="hidden"] {
+    display: none;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+button {
+    width: auto;
+    overflow: visible;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+
+textarea, input {
+    outline: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+@font-face {
+    src: url('../fonts/blissregular-webfont.eot');
+    src: url('../fonts/blissregular-webfont.eot?#iefix') format('embedded-opentype')
+	, url('../fonts/blissregular-webfont.woff') format('woff')
+	, url('../fonts/blissregular-webfont.ttf') format('truetype')
+	, url('../fonts/blissregular-webfont.svg#BlissRegular') format('svg');
+    font-family: 'BlissRegular';
+    font-style: normal;
+    font-weight: normal;
+}
+
+body, .header, html {
+    -moz-font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: #00527a !important;
+    color: #3f3f3f !important;
+    font-size: 14px !important;
+}
+
+.subNav .siteWidth {
+    min-height: 0;
+}
+
+.footer .siteWidth {
+    min-height: 0;
+}
+
+.siteWidth {
+    margin: auto;
+    width: 980px;
+    min-height: 400px;
+}
+
+.header {
+    height: 80px;
+}
+
+    .header .siteWidth {
+        min-height: 80px;
+    }
+
+.logo {
+    display: block;
+    float: left;
+    background: url("../images/LogoProdOrg.png") no-repeat;
+    width: 312px;
+    height: 80px;
+}
+
+.headerRight {
+    float: right;   
+    width: 668px;
+    height: 80px;
+}
+
+.topLinks {
+    padding-top: 4px;
+    height: 20px;
+    color: #336e8f;
+    text-align: right;
+}
+
+    .topLinks a, .topLinks span {
+        padding-right: 4px;
+        padding-left: 4px;
+        color: #cce9f8;
+        text-decoration: none;
+    }
+
+        .topLinks a:hover {
+            text-decoration: underline;
+        }
+
+.mainNav {
+    float: right;
+    margin-top: 15px;
+    height: 41px;
+}
+
+    .mainNav  a, .mainNav  div  a {
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        display: block;
+        float: left;
+        margin-top: 5px;
+        margin-left: 3px;
+        border-radius: 5px 5px 0 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background: #006799;
+        width: 100px;
+        height: 36px;
+        color: #a3bdd0;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        .mainNav  a:hover {
+            background: #0170a6;
+            color: #fff;
+        }
+
+        .mainNav  a.active, .mainNav  a.active:hover {
+            margin-top: 0;
+            margin-top: 1px;
+            background: #006799;
+            background: url("../images/tab-active.png");
+            height: 50px;
+            color: #fff;
+            line-height: 41px;
+        }
+
+.subNav {
+    background: #0081bd;
+    height: 32px;
+    line-height: 32px;
+}
+
+.subNavLinks {
+    float: left;
+    color: #1197d5;
+}
+
+    .subNavLinks a {
+        padding-right: 4px;
+        padding-left: 4px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .subNavLinks a:hover {
+            text-decoration: underline;
+        }
+
+.contentWrap {
+    background: #fff url("../images/bg.png") repeat-x;
+}
+
+.contentFullWidth .siteWidth {
+    background: #fff;
+    width: 100%;
+}
+
+.content {
+    background: url("../images/bg-body.png") center top no-repeat;
+    min-height: 400px;
+}
+
+    .content .siteWidth {
+        background: #fff;
+        padding: 20px;
+        width: 938px;
+    }
+
+.title {
+    margin-bottom: 20px;
+}
+
+    .title h1 {
+        display: block;
+        float: left;
+        color: #e18c2f;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .title .titleBg {
+        float: left;
+        width: 221px;
+        height: 19px;
+    }
+
+.titleBlue {
+    margin-bottom: 20px;
+}
+
+    .titleBlue h1 {
+        display: block;
+        float: left;
+        color: #0081bd;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .titleBlue .titleBg {
+        float: left;
+        background: url("../images/title-blue-bg.png");
+        width: 221px;
+        height: 19px;
+    }
+
+
+
+h2 {
+    margin-bottom: 6px;
+    border-bottom: 2px solid #0081bd;
+    padding-bottom: 3px;
+    color: #0081bd;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.arvatoLogo {
+    float: left;
+    background: url("../images/arvato-logo.png");
+    width: 132px;
+    height: 67px;
+}
+
+.footerLinks {
+    padding-top: 22px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.tblStandard {
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 13px;
+}
+
+    .tblStandard th,  .tblStandard thead td, .tblStandardHead td {
+        padding: 5px;
+        color: #989898;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+.PartDetailTabelCell {
+    border-top: 0 solid white !important;
+    padding: 0 !important;
+}
+
+.tblStandard td, .tblDebug td {
+    border-top: 1px solid white;
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tblStandardRight td {
+    border-top: 1px solid #fff;
+    padding: 5px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+tr.rowRecent:Hover, .rowCurrent, .DarkBlue tr .rowRecent:hover {
+    cursor: pointer;
+    background-color: #F3F2A2 !important;
+}
+
+tr.rowRecentNoClick:Hover, .rowCurrent, .DarkBlue tr .rowRecentNoClick:hover {
+    background-color: #F3F2A2 !important;
+}
+
+
+
+.tblStandard tr td.HasInput:hover {
+    background-color: #F3F2A2;
+}
+
+.tblStandard tr.HasInput:hover {
+    background-color: #F3F2A2;
+}
+
+.tblStandard tr input.grdbutton {
+    display: none;
+}
+
+.tblStandard tr:hover input.grdbutton {
+    display: block;
+}
+
+.tblStandard .sections td {
+    border: 0;
+    background: #f7f7f7;
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tblStandard .odd {
+    background: #e1e1e1;
+}
+
+.tblStandard .even {
+    background: #f3f3f3;
+}
+
+.tblStandard .rowTitle, .tblDebug .rowTitle {
+    border-top: 4px solid #fff;
+    border-bottom: 2px solid #a6c7e3;
+    padding: 5px;
+    color: #989898;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.orderBtns {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    position: relative;
+    float: left;
+    margin-bottom: 35px;
+    border-radius: 5px 5px 0 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #bfd4de;
+    width: 340px;
+    height: 90px;
+}
+
+    .orderBtns .ordersTitle {
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        position: relative;
+        border-radius: 5px 5px 0 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background: #6b9bb2;
+        padding: 4px;
+        color: #fff;
+        font-size: 14px;
+        text-indent: 10px;
+    }
+
+.currentBtns {
+    text-align: center;
+}
+
+.currentBtns, .CommonReports {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    position: relative;
+    float: right;
+    margin-bottom: 35px;
+    border-radius: 5px 5px 0 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #ffe6c4;
+    width: 560px;
+    height: 110px;
+    color: #000;
+}
+
+    .currentBtns span, .CommonReports span {
+        display: block;
+        padding: 4px;
+    }
+
+    .currentBtns .ordersTitle, .CommonReports .reportsTitle {
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        position: relative;
+        border-radius: 5px 5px 0 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background: #ffc576;
+        padding: 4px;
+        color: #fff;
+        font-size: 14px;
+        text-align: left;
+        text-indent: 10px;
+    }
+
+.btnCreate {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    margin-left: 13px;
+    border: 2px solid #d1e0e7;
+    border-radius: 5px;
+    background: url("../images/btn-create.png");
+    width: 146px;
+    height: 52px;
+}
+
+    .btnCreate:hover {
+        border: 2px solid #6b9bb2;
+    }
+
+.btnFind {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    margin-left: 13px;
+    border: 2px solid #d1e0e7;
+    border-radius: 5px;
+    background: url("../images/btn-find-order.png");
+    width: 146px;
+    height: 52px;
+}
+
+    .btnFind:hover {
+        border: 2px solid #6b9bb2;
+    }
+
+
+
+.ShipToExtra {
+    margin-left: 20px;
+    padding-left: 50px;
+}
+
+
+.searchWrap {
+    position: absolute;
+    right: 0;
+}
+
+    .searchWrap div {
+        float: left;
+        margin-right: 3px;
+    }
+
+.searchInput input {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    position: relative;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 2px;
+    width: 125px;
+    height: 22px;
+    font-size: 12px;
+}
+
+.searchInputBox {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    display: block;
+    position: relative;
+    float: left;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0081BD;
+    padding: 2px;
+    color: White;
+}
+
+.searchBtn input {
+    margin: -1px 3px 0 0;
+    border: 0;
+    background: url("../images/go.png") no-repeat;
+}
+
+.helpBtn a {
+    display: block;
+    margin: 5px 0 0 10px;
+    background: url("../images/pop-help.png") no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.NoOrders {
+    opacity: .5;
+}
+
+.center-text {
+    text-align: center;
+  }
+  
+  td a {
+    display: block;
+    text-align: center;
+}

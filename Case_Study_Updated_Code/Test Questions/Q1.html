@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>
+        VISION
+    </title>
+    <link rel="stylesheet" type="text/css" href="Style/Default.css">
+	<link rel="stylesheet" type="text/css" href="Style/base/jquery-ui-1.10.4.custom.css" >
+</head>
+<body>
+<form method="post" action="./"  id="frmMain">
+<div id="fullPage">
+<!-- Header -->
+<div class="header">
+    <div class="siteWidth clearfix">
+        <div class="logo">
+        </div>
+        <div class="navHeader">
+            <div id="topLinks" class="topLinks">
+                <span id="loginName" title="Welcome">Welcome, Guest User</span>
+                | <a href="#">Change Password</a>
+                | <a href="#">Logout</a>
+                | <a href="#">Help</a>
+            </div>
+            <!-- Tabs -->
+            <div id="divMainNav" class="mainNav clearfix" style="width: 621px;">
+				<div style="float:right">
+					<a href="#" class="active">Orders</a>
+					<a href="#">Parts</a>
+					<a href="#">Reporting</a>
+				</div>
+            </div>
+            <!-- End Tabs -->
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+<!-- Subnav -->
+<div class="subNav">
+    <div class="siteWidth clearfix" style="position: relative; white-space: nowrap !important;">
+        <div id="pnlJumpbox" class="searchWrap clearfix" onkeypress="javascript:alert('Search Goes Here');">
+
+            <div class="searchInput">
+                <input name="txtJumpBox" type="text" maxlength="50" id="txtJumpBox" title="Jump to order, part, report, …" placeholder="Jump to..."/>
+            </div>
+            <div class="searchBtn">
+                <input type="image" name="bnJumpGo" id="bnJumpGo" title="Jump to go button" src="images/go.png" alt="Go Jump"/>
+            </div>
+            <div class="helpBtn">
+                <a href="#" id="jumpHelp"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Subnav -->
+<!-- contentWrap -->
+<div class="contentWrap">
+
+<div id="pnlSiteWidth" class="content">
+<div class="siteWidth">
+<div class="title clearfix">
+    <h1>Order Management</h1>
+    <div class="titleBg">
+    </div>
+</div>
+<div class="orderBtns clearfix">
+    <div class="ordersTitle">
+        ORDERS
+    </div>
+    <a href="#" class="btnCreate"></a>
+    <a href="#" class="btnFind"></a>
+</div>
+<div id="cphContent_currentOrders" class="currentBtns clearfix NoOrders" class="currentBtns clearfix NoOrders">
+    <div class="ordersTitle">
+        CURRENT ORDER
+    </div>
+    <span id="cphContent_lblCurrentOrderMsg">You do not have an order open for editing</span>
+    <div class="currentBtnWrap clearfix">
+        <div id="cphContent_panSave" class="buttonStandard save-bnt1 buttondisable buttonStandard save-bnt1_disable">
+            <a href="#"></a>
+        </div>
+        <div id="cphContent_panContinue" class="buttonStandard continue-bnt1 buttondisable buttonStandard continue-bnt1_disable">
+            <a href="#"></a>
+        </div>
+        <div id="cphContent_panDiscard" class="buttonStandard discard-bnt1 buttondisable buttonStandard discard-bnt1_disable">
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+
+ <h2 id="H2">Recent File History</h2>
+<table class="tblStandard" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-style: None; border-width: 0px;">
+<tr class="GridStyle1Header">
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Imported</th>
+    <th scope="col">Client/Oper</th>
+    <th scope="col">Import filename</th>
+    <th scope="col">Orders</th>
+    <th scope="col">Ship-Tos</th>
+    <th title="Canceled" scope="col">CNCL</th>
+    <th title="Pending release" scope="col">DRFT</th>
+    <th title="Backordered" scope="col">BO</th>
+    <th title="Processing" scope="col">PROC</th>
+    <th title="Shipped" scope="col">SHIP</th>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 05:51:24 through 05:51:26" >12/4/2017</td>
+    <td title="Cigna DocGen" >CIGNA/DOCGEN</td>
+    <td >
+        <a href="#">1712022109dgnmaddr.txt</a>
+    </td>
+    <td>2</td>
+    <td>326</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">2</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 09:35:23 through 09:44:25" >12/4/2017</td>
+    <td title="This one data file was used to create orders for different Client/Operations." >PCSH/(multiple)</td>
+    <td >
+        <a href="#">arvatcspmm12012017220043.txt</a>
+    </td>
+    <td>291</td>
+    <td>301</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">291</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 10:00:13 through 10:02:53" >12/4/2017</td>
+    <td title="Coordination of benefits Americhoice" >PCSH/RXCOB</td>
+    <td >
+        <a href="#">cob_notification_20171201.dat</a>
+    </td>
+    <td>4</td>
+    <td>148</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">4</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 11:30:21 through 11:30:35" >12/4/2017</td>
+    <td title="OHIO MMP Program  Post Enrollment" >PCSH/OHIOMMP</td>
+    <td >
+        <a href="#">csp_member_kit_mmp_12012017199991.txt</a>
+    </td>
+    <td>156</td>
+    <td>156</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">156</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 00:43:22 through 00:43:22" >12/4/2017</td>
+    <td title="SSCR 30076-Anthem eCerts (VA eCERT KITS)" >ANTHEM/539VAC</td>
+    <td >
+        <a href="#">dvsw0 f_20171204022915_ecerts</a>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">1</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 09:34:13 through 09:34:14" >12/4/2017</td>
+    <td title="UHG Healthcare Exhange Welcome Guide  and Welcome Card fulfillment" >PCSH/UHGHCEX</td>
+    <td >
+        <a href="#">exchanges_welcome_kit_20171201_101724.csv</a>
+    </td>
+    <td>9</td>
+    <td>16</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">9</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 09:34:31 through 09:34:33" >12/4/2017</td>
+    <td title="UHG Healthcare Exhange Welcome Guide  and Welcome Card fulfillment" >PCSH/UHGHCEX</td>
+    <td >
+        <a href="#">exchanges_welcome_kit_20171204_102159.csv</a>
+    </td>
+    <td>18</td>
+    <td>34</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">18</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 04:55:41 through 04:59:16" >12/4/2017</td>
+    <td title="Subscriber ID Cards - (Daily)" >BSC/005</td>
+    <td >
+        <a href="#">idcard_20171204_1212_01.xml</a>
+    </td>
+    <td>1,406</td>
+    <td>4,303</td>
+    <td>
+        <a href="#">3</a>
+    </td>
+    <td>
+        <a href="#">1,401</a>
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">2</a>
+    </td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 14:10:57 through 14:11:00" >12/4/2017</td>
+    <td title="ANTHEM MO PPMR PHASE II Group Mailing" >ANWR/264G</td>
+    <td >
+        <a href="#">prod_cosg_90day_grpno_20171201.txt</a>
+    </td>
+    <td>87</td>
+    <td>87</td>
+    <td></td>
+    <td>
+        <a href="#">87</a>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 08:56:29 through 08:56:29" >12/4/2017</td>
+    <td title="IDC Directory" >BCI/IDCDIR</td>
+    <td >
+        <a href="#">p_idc_vis_orderextract_20171201150000.txt</a>
+    </td>
+    <td>2</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">2</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 12:16:33 through 12:16:33" >12/4/2017</td>
+    <td title="IDC Directory" >BCI/IDCDIR</td>
+    <td >
+        <a href="#">p_idc_vis_orderextract_20171204130000.txt</a>
+    </td>
+    <td>1</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">1</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 12:20:59 through 12:21:38" >12/4/2017</td>
+    <td title="This one data file was used to create orders for different Client/Operations." >WPKA/(multiple)</td>
+    <td >
+        <a href="#">rate_renewal_pack_00040261_20171130_1131.txt</a>
+    </td>
+    <td>199</td>
+    <td>199</td>
+    <td></td>
+    <td>
+        <a href="#">199</a>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 11:00:24 through 11:00:33" >12/4/2017</td>
+    <td title="This one data file was used to create orders for different Client/Operations." >PCSH/(multiple)</td>
+    <td >
+        <a href="#">unv_mm_kit_arvato_20171204102133.txt</a>
+    </td>
+    <td>99</td>
+    <td>106</td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">30</a>
+    </td>
+    <td>
+        <a href="#">69</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="even rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 13:00:08 through 13:00:13" >12/4/2017</td>
+    <td title="West Coast Delegated Fulfillment" >HUMANA/001</td>
+    <td >
+        <a href="#">vendor_2_da_extract_planyear2018_20171201_234719.csv</a>
+    </td>
+    <td>46</td>
+    <td>46</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <a href="#">46</a>
+    </td>
+    <td></td>
+</tr>
+<tr class="odd rowRecentNoClick">
+    <td style="max-width: 20px; padding: 0px; width: 150px; width: 16px;">
+        <div style="height: 20px; width: 20px;">
+            <img src="images\rowStatus_yellow.png">
+        </div>
+    </td>
+    <td title="Imported from 12:44:48 through 12:44:48" >12/4/2017</td>
+    <td title="Small Group &amp; Md/LG Group SBC - (Daily)" >BSC/007</td>
+    <td >
+        <a href="#">admin_12042017_1244</a>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td></td>
+    <td>
+        <a href="#">1</a>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+</div><input type="hidden" name="cphContent$srFileFeeds$hidTotalPages" id="cphContent_srFileFeeds_hidTotalPages" value="1"/><input type="hidden" name="cphContent$srFileFeeds$hidGridHeader_Sku" id="cphContent_srFileFeeds_hidGridHeader_Sku"/><input type="hidden" name="cphContent$srFileFeeds$hidGridHeader_Rev" id="cphContent_srFileFeeds_hidGridHeader_Rev"/><input type="hidden" name="cphContent$srFileFeeds$hidGridHeader_Desc" id="cphContent_srFileFeeds_hidGridHeader_Desc"/>
+<div id="cphContent_srFileFeeds_pnlTemp1">
+    <div id="cphContent_srFileFeeds_panNavigation_Results">
+        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse; text-align: center; width: 100%;">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+<div id="pnlTemp1">
+    <div id="panNavigation_Results">
+        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse; text-align: center; width: 100%;">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+</div>
+</div>
+<!-- End Content -->
+</div>
+<!-- End contentWrap -->
+<!-- Subnav | for footer nav links -->
+<div class="subNav">
+    <div class="siteWidth clearfix">
+        <div class="subNavLinks footerSubLinks">
+            <a href="#">About Us</a>
+            | <a href="#">Privacy Policy</a>
+            | <a href="#">Help</a>
+        </div>
+        <div class="searchWrap">
+        </div>
+    </div>
+</div>
+<!-- End Subnav | for footer links -->
+<!-- Footer -->
+<div class="footer">
+    <div class="siteWidth clearfix">
+        <div id="arvatoLogo" class="arvatoLogo">
+        </div>
+        <div class="footerLinks">
+            arvato all rights reserved<br/>
+            &#169;
+            <span id="lbCopyRightYear">2017</span>
+            arvato - a Bertelsmann company
+        </div>
+    </div>
+</div>
+<!-- End Footer -->
+<!--Jump Info-->
+<div id="dialog-Jump" title="Jump To Help box"
+     style="display: none;">
+    <div style="font-size: larger; font-weight: bold">
+        <span id="jumpText">You are able to search the following types:</span>
+    </div>
+    <br/>
+    - MarLo order number (X12345678)<br/>
+    - Customer data feed’s order number<br/>
+    - Customer data file name<br/>
+    - Member number/HCID<br/>
+    - Group ID<br/>
+    - Group name<br/>
+    - Broker/Agent ID<br/>
+    - Part number<br/>
+    <br/>
+    Production identifiers:<br/>
+    - POD ID (X12345678A+3--12)<br/>
+    - Batch order number (X12345678A)<br/>
+    - Ship-To order number (X12345678A-12)<br/>
+    - Workorder number (X12345678A+3)<br/>
+    <br/>
+    Scans the following only if you enter at least 10 characters,<br/>
+    and finds matches that start with the text you enter so
+    <br/>
+    “brandywine ind” would find “Brandywine Industries”<br/>
+    <br/>
+    - Ship-to name (not Attention)<br/>
+    - Ship-to street address (1st street line only)<br/>
+    - Part description (any part of description)<br/>
+    <br/>
+    Miscellaneous identifiers:<br/>
+    - Report ID’s (IA02) or report number (r35)<br/>
+    - Rule table name (SR_DAILY_CONTRACTS)<br/>
+    - Audit pool number (pool 123)<br/>
+    - Query number (q21)<br/>
+    <br/>
+    Searches are not case sensitive so “abc” and “ABC” will return the same results.<br/>
+</div>
+<!--End Jump INfo-->
+
+<div style="display: none; padding: 0px !important;" id="LoadProfiles">
+    <!--Change Profiles-->
+    <table id="tblProfiles" class="tblStandard"
+           style="border-collapse: collapse; border-spacing: 0px; margin-bottom: 0px !important; padding: 20px; width: 100%;">
+        <tbody valign="middle">
+        <tr>
+            <td>
+                <h2>
+                    View Vision as one of the following
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Search :
+                <input name="txtViewAsSearchFor" type="text" id="txtViewAsSearchFor"/>
+            </td>
+        </tr>
+        <tr>
+            <td id="tdViewAs">
+                <div id="divViewAs" style="max-height: 500px; overflow: auto;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="divViewAsSelected">
+                </div>
+                <input type="hidden" name="txtSelectedProfile" id="txtSelectedProfile"/>
+                <input type="hidden" name="txtSelectedProfileUser" id="txtSelectedProfileUser"/>
+                <input type="hidden" name="txtSelectedProfileUserDisplay" id="txtSelectedProfileUserDisplay"/>
+                <input type="hidden" name="txtSelectedProfileGroup" id="txtSelectedProfileGroup"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <hr/>
+        <input type="submit" name="cmdChangeProfile" value="Change Profile"  id="cmdChangeProfile" class="ui-button ui-widget
+ui-state-default ui-corner-all ui-button-text-only"/>
+        &nbsp;&nbsp;
+        <input type="button" id="btnDataModelCancel" 
+               class="ui-button
+ui-widget ui-state-default ui-corner-all ui-button-text-only"
+               value="Cancel"/>
+    </div>
+    <!--End Change Profiles-->
+</div>
+<div id="frmMain2">
+</div>
+<input type="submit" name="cmdClearButton" value="Always Randomly Fired" id="cmdClearButton" style="display: none;"/>
+</div>
+
+</form>
+	<script type="text/javascript" src="Scripts/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-ui-1.10.4.custom.js"></script>
+	<script type="text/javascript" src="Scripts/default.js"></script>
+</body>
+</html>
